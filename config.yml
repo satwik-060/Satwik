@@ -1,5 +1,4 @@
 baseURL: "https://satwik-060.github.io/"
-languageCode: en-us
 title: Monkey
 theme: PaperMod
 paginate: 5
@@ -9,7 +8,6 @@ minify:
   minifyOutput: true
 
 params:
-
   title: Monkey
   keywords: [Blog, Portfolio, Machine Learning, Deep Learning, Github]
   author: Monkey
@@ -17,44 +15,48 @@ params:
   assets:
     favicon: "logos/monkey/icons8-monkey-glyph-neue-96.png"
 
-  profileMode:
-      enabled: true
-      title: "Heyy! \U0001F44B" 
-      subtitle: "Behold, for I, Satwik, have embarked upon an extraordinary endeavor. Brace yourselves as I unveil the wondrous creations I am currently crafting, infused with the essence of ingenuity and innovation. Prepare to be enthralled!"
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  UseHugoToc: true
+  hidemeta: false
+  ShowToc: true
+  ShowCodeCopyButtons: true
+  ShowPostNavLinks: true
 
-      imageUrl: "logos/monkey/monkey.png"
-      imageTitle: "Profile pic" 
-      imageWidth: 150 
-      imageHeight: 150
-      
+  mainSections:
+  - Blogs
+  - Projects
+
+  profileMode:
+    enabled: true
+    title: "Heyy! \U0001F44B"
+    subtitle: "Behold, for I, Satwik, have embarked upon an extraordinary endeavor. Brace yourselves as I unveil the wondrous creations I am currently crafting, infused with the essence of ingenuity and innovation. Prepare to be enthralled!"
+
+    imageUrl: "logos/monkey/monkey.png"
+    imageTitle: "Profile pic"
+    imageWidth: 150
+    imageHeight: 150
+
   socialIcons:
-      - name: "github"
-        url: "https://github.com/satwik-060"
-      - name: "cv"
-        url: "https://drive.google.com/file/d/144zhdRwWdO7gl_6epnYLueKID0_lunLG/view?usp=sharing"
-      - name: "linkedin"
-        url: "https://www.linkedin.com/in/sri-satwik-perisetla/"
+    - name: "github"
+      url: "https://github.com/satwik-060"
+    - name: "cv"
+      url: "https://drive.google.com/file/d/144zhdRwWdO7gl_6epnYLueKID0_lunLG/view?usp=sharing"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/sri-satwik-perisetla/"
 
   cover:
     linkFullImages: true
 
 
-  ShowBreadCrumbs: true
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowToc : true  
-  ShowCodeCopyButtons: true
-  comments: true
-  
-  outputs:
-    home:
-      - HTML
-      - RSS
-      - JSON
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
 
-  mainSections:
-    - Blogs
-    - Projects
+  
 
 menus:
   main:
@@ -74,7 +76,8 @@ menus:
       name: archives
       url: /archives/
       weight: 40
-    - identifier: search 
+    - identifier: search
       name: search
       url: /search/
       weight: 50
+
