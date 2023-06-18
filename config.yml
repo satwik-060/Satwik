@@ -10,6 +10,10 @@ minify:
 
 params:
 
+  title: Monkey
+  keywords: [Blog, Portfolio, Machine Learning, Deep Learning, Github]
+  author: Monkey
+
   assets:
     favicon: "logos/monkey/icons8-monkey-glyph-neue-96.png"
 
