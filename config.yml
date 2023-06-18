@@ -1,0 +1,76 @@
+baseURL: 
+languageCode: en-us
+title: Monkey
+theme: PaperMod
+paginate: 5
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+
+  assets:
+    favicon: "logos/monkey/icons8-monkey-glyph-neue-96.png"
+
+  profileMode:
+      enabled: true
+      title: "Heyy! \U0001F44B" 
+      subtitle: "Behold, for I, Satwik, have embarked upon an extraordinary endeavor. Brace yourselves as I unveil the wondrous creations I am currently crafting, infused with the essence of ingenuity and innovation. Prepare to be enthralled!"
+
+      imageUrl: "logos/monkey/monkey.png"
+      imageTitle: "Profile pic" 
+      imageWidth: 150 
+      imageHeight: 150
+      
+  socialIcons:
+      - name: "github"
+        url: "https://github.com/satwik-060"
+      - name: "cv"
+        url: "https://drive.google.com/file/d/144zhdRwWdO7gl_6epnYLueKID0_lunLG/view?usp=sharing"
+      - name: "linkedin"
+        url: "https://www.linkedin.com/in/sri-satwik-perisetla/"
+
+  cover:
+    linkFullImages: true
+
+
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowToc : true  
+  ShowCodeCopyButtons: true
+  comments: true
+  
+  outputs:
+    home:
+      - HTML
+      - RSS
+      - JSON
+
+  mainSections:
+    - Blogs
+    - Projects
+
+menus:
+  main:
+    - identifier: Blogs
+      name: Blogs
+      url: /Blogs/
+      weight: 10
+    - identifier: Projects
+      name: Projects
+      url: /Projects/
+      weight: 20
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 30
+    - identifier: archives
+      name: archives
+      url: /archives/
+      weight: 40
+    - identifier: search 
+      name: search
+      url: /search/
+      weight: 50
